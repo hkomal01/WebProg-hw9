@@ -1,0 +1,62 @@
+[
+        {
+            "title": "Airbag",
+            "artists": "Radiohead",
+            "genre": "Alternative Rock",
+            "year": 1997
+        },
+        {
+            "title": "Paranoid Android",
+            "artists": "Radiohead",
+            "genre": "Alternative Rock",
+            "year": 1997
+        },
+        {
+            "title": "Work This Time",
+            "artists": "King Gizzard and the Lizard Wizard",
+            "genre": "Psychadelic Rock",
+            "year": 2014
+        },
+        {
+            "title": "I'm In Your Mind Fuzz",
+            "artists": "King Gizzard and the Lizard Wizard",
+            "genre": "Psychadelic Rock",
+            "year": 2014
+        },
+        {
+            "title": "King Kunta",
+            "artists": "Kendrick Lamar",
+            "genre": "Hip-hop",
+            "year": 2015
+        },
+        {
+            "title": "Lost",
+            "artists": "Frank Ocean",
+            "genre": "Neo-soul",
+            "year": 2012
+        },
+        {
+            "title": "DSCO",
+            "artists": "Sweet Trip",
+            "genre": ["Dance","Electronic"],
+            "year": 2003
+        },
+        {
+            "title": "Numb",
+            "artists": "Portishead",
+            "genre": "Trip-hop",
+            "year": 1994
+        },
+        {
+            "title": "Take Five",
+            "artists": "The Dave Brubeck Quartet",
+            "genre": "Jazz",
+            "year": 1959
+        },
+        {
+            "title": "Avril 14th",
+            "artists": "Aphex Twin",
+            "genre": ["Dance","Electronic"],
+            "year": 2004
+        }        
+]
