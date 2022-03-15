@@ -14,10 +14,10 @@
             str = JSON.stringify(data);
             document.write(str +"<br/>");
           strHTML= "<ul>";
-          data.forEach(function(animal) { 
+          data.forEach(function(song) { 
           strHTML += "<li>" 
-                + animal.name + " : " 
-              + animal.type + "</li>";
+                + song.title + " : " 
+              + song.artist + "</li>";
             }) 
         strHTML += "</ul>";
         document.write (strHTML);  /**/
