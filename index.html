@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="songs.css">
+        <title>
+            Songs
+        </title>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <script language="javascript">
+        $.get( "https://hkomal01.github.io/hw9/songs.json", 
+            function( data ) {
+            str = JSON.stringify(data);
+            document.write(str +"<br/>");
+          strHTML= "<ul>";
+          data.forEach(function(animal) { 
+          strHTML += "<li>" 
+                + animal.name + " : " 
+              + animal.type + "</li>";
+            }) 
+        strHTML += "</ul>";
+        document.write (strHTML);  /**/
+        })
+      </script>
+            
+            </body>
+    </body>
+</html>
