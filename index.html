@@ -8,22 +8,44 @@
         <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     </head>
     <body>
-      <script language="javascript">
-        $.get( "https://hkomal01.github.io/hw9/songs.json", 
+      <script>
+        function Update(obj, gen) {
+          gen = document.getElementById('genres').value;
+          document.getElementById("songs").innerHTML = "";
+          for(let i = 0; i < 10; i++){ 
+            if(gen == obj[i].genre) {
+              document.getElementById("songs").innerHTML += obj[i].title + "<br>";
+            }
+          }
+        }
+        $.get("https://hkomal01.github.io/hw9/songs.json", 
             function( data ) {
             str = JSON.stringify(data);
             document.write(str +"<br/>");
+            obj = JSON.parse(str);
           strHTML= "<ul>";
-          data.forEach(function(songs) { 
-          strHTML += "<li>" 
-                + songs.title + " : " 
-              + songs.artist + "</li>";
-            }) 
+          for(let i = 0; i < 10; i++){ 
+            strHTML += "<li>" 
+            + obj[i].title + "<br>" 
+            + obj[i].artists + "<br>"
+            + obj[i].genre + "<br>"
+            + obj[i].year + "</li>";
+          } 
         strHTML += "</ul>";
-        document.write (strHTML);  /**/
+        document.write (strHTML);
+        strHTML2 = "<label>Choose a genre:</label> <select name=\"genres\" id=\"genres\">";
+        genres = ["Alternative Rock", "Psychadelic Rock", "Hip-hop", "Neo-soul", "Dance", "Trip-hop", "Jazz"];
+
+        document.write("Filtered songs: <br> <br><div id=\"songs\"></div> <br>");
+
+        for (let i = 0; i < genres.length; i++) {
+            strHTML2 += "<option>" + genres[i] + "</option>";
+        }
+        strHTML2 += "</select> ";
+        document.write(strHTML2);
+        gen = document.getElementById('genres').value;
+        document.write("<input type=\"button\" value=\"Filter\" onclick=\"Update(obj, gen)\">  </input> <br>");
         })
-      </script>
-            
-            </body>
+      </script>      
     </body>
 </html>
