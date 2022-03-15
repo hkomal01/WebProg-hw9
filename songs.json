@@ -20,7 +20,7 @@
         {
             "title": "I'm In Your Mind Fuzz",
             "artists": "King Gizzard and the Lizard Wizard",
-            "genre": "Psychadelic Rock",
+            "genre": ["Psychadelic Rock"],
             "year": 2014
         },
         {
