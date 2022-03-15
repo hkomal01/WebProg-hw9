@@ -1,5 +1,4 @@
-{
-    "songs":[
+[
         {
             "title": "Airbag",
             "artists": "Radiohead",
@@ -60,5 +59,4 @@
             "genre": ["Dance","Electronic"],
             "year": 2004
         }        
-    ]
-}
+]
